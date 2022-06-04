@@ -1,10 +1,14 @@
 import {Container} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import "../styles/title.css"
 
 export const Title = () => {
     return (
         <Container className={"red-border-dev"}>
-            <Link to={"/"} className={"text-decoration-none link-dark"}><h3>ShadowDensity</h3></Link>
+            <h3 className={"title justify-content-center"}>
+                <span className={"title-left"}>Shadow</span>
+                <span className={"title-right"}>Density</span>
+            </h3>
         </Container>
     )
 }

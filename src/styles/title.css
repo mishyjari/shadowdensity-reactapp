@@ -1,0 +1,36 @@
+:root {
+    --title-dark: #000;
+    --title-light: #fff;
+}
+
+.title {
+    font-family: Copperplate;
+    letter-spacing: -.25rem;
+    font-size: 5em;
+}
+
+.title-left {
+    -webkit-text-fill-color: var(--title-light);
+    -webkit-text-stroke-color: var(--title-dark);
+    -webkit-text-stroke-width: thin;
+}
+
+.title-right {
+    font-weight: bold;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.title-left:hover {
+    -webkit-text-fill-color: var(--title-dark);
+    -webkit-text-stroke-color: var(--title-dark);
+    font-weight: bold;
+}
+
+.title-right:hover {
+    -webkit-text-fill-color: var(--title-light);
+    -webkit-text-stroke-color: var(--title-dark);
+    font-weight: lighter;
+}
