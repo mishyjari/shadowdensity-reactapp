@@ -7,8 +7,8 @@ import {Title} from "./components/Title";
 import {Navigation} from "./components/Navigation";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Blog} from "./pages/Blog";
-import {Gallery} from "./pages/Gallery";
 import {About} from "./pages/About";
+import {Photographs} from "./pages/Photographs";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Routes>
                 <Route path={"/"} element={<Main/>} />
                 <Route path={"/blog"} element={<Blog/>} />
-                <Route path={"/gallery"} element={<Gallery/>} />
+                <Route path={"/photographs"} element={<Photographs/>} />
                 <Route path={"/about"} element={<About/>} />
             </Routes>
         </BrowserRouter>
