@@ -4,11 +4,11 @@ import "../styles/title.css"
 
 export const Title = () => {
     return (
-        <Container className={"red-border-dev"}>
-            <h3 className={"title justify-content-center"}>
+        <Container className={"red-border-dev title"}>
+            <Link to={"/"} className={"title"}>
                 <span className={"title-left"}>Shadow</span>
                 <span className={"title-right"}>Density</span>
-            </h3>
+            </Link>
         </Container>
     )
 }

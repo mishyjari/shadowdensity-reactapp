@@ -9,19 +9,26 @@ import {IImage} from "../models/Image";
 import {useCallback, useState} from "react";
 import {IGallery} from "../models/Gallery";
 import lightGallery from "lightgallery";
+import "../styles/gallery.css"
 
 interface IGalleryComponentProps {
     gallery: IGallery;
 }
 
 export const GalleryComponent = ({gallery}: IGalleryComponentProps) => {
+
+    const onInit = () => {
+        console.log('lightGallery has been initialized');
+    };
+
     return (
         <Container className={"red-border-dev body-content"}>
             <h3>{gallery.title}</h3>
             <p>{gallery.description}</p>
             <LightGallery
                 fullScreen={true}
-
+                onInit={onInit}
+                speed={500}
                 plugins={[lgThumbnail, lgZoom]}
             >
                 {

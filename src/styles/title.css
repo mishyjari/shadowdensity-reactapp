@@ -1,36 +1,46 @@
 :root {
-    --title-dark: #000;
-    --title-light: #fff;
+    --dark: #000;
+    --light: #fff;
 }
 
 .title {
     font-family: Copperplate;
+    text-decoration: none;
+    color: inherit;
+    font-size: 5rem;
     letter-spacing: -.25rem;
-    font-size: 5em;
 }
 
 .title-left {
-    -webkit-text-fill-color: var(--title-light);
-    -webkit-text-stroke-color: var(--title-dark);
-    -webkit-text-stroke-width: thin;
+    -webkit-text-fill-color: var(--light);
+    -webkit-text-stroke-color: var(--dark);
+    -webkit-text-stroke: thin;
+    font-weight: lighter;
 }
 
 .title-right {
     font-weight: bold;
 }
 
+/* Hover Styles */
+
 .title:hover {
     cursor: pointer;
+    text-shadow: 1px 1px 2px lightgrey;
+    text-decoration: none;
+    color: inherit;
 }
 
-.title-left:hover {
-    -webkit-text-fill-color: var(--title-dark);
-    -webkit-text-stroke-color: var(--title-dark);
-    font-weight: bold;
+.title:hover > .title-left {
+    -webkit-text-fill-color: var(--dark);
+    -webkit-text-stroke-color: var(--dark);
+    -webkit-text-stroke: initial;
+    font-weight: normal;
 }
 
-.title-right:hover {
-    -webkit-text-fill-color: var(--title-light);
-    -webkit-text-stroke-color: var(--title-dark);
+.title:hover > .title-right {
+    -webkit-text-fill-color: var(--light);
+    -webkit-text-stroke-color: var(--dark);
+    -webkit-text-stroke: thin;
     font-weight: lighter;
 }

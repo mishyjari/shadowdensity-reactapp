@@ -8,12 +8,7 @@
 }
 
 .red-border-dev {
-  border: 1px solid red;
-}
-
-.title {
-  position: absolute;
-  top: 0;
+  /*border: 1px solid red;*/
 }
 
 .body-content {
